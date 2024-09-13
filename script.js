@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
 const imageSetsCartas = [
     [
       "https://cdn3.iconfinder.com/data/icons/blue-collar-jobs-1/100/12-512.png",
-      '/img/a11.jpeg', '/img/a2.jpeg', '/img/a3.jpeg'
+      '/img/a1.jpeg', '/img/a2.jpeg', '/img/a3.jpeg'
     ]
   ];
-  let imagesCartas = [0];
+  let imagesCartas = [4];
   
   // Cambiar imagen de Cartas
   function changeImageCartas(index, direction) {
@@ -95,11 +95,22 @@ const imageSetsCartas = [
    // Scroll Listener para tex_top
  window.addEventListener('scroll', function() {
     const offsetY = window.scrollY;
-    document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * 4}px)`;
-       document.getElementById('tex_btn-container').style.transform = `translateY(${offsetY * 4}px)`
-   
-  });
+    document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * 3}px)`;
+    document.getElementById('tex_top-container').style.filter = 'drop-shadow(5px 5px 0 blue) hue-rotate(-337deg) drop-shadow(5px 5px 0 #ff1500)';
+    document.getElementById('tex_top-container').style.border= '1px solid blue';
+     /*  document.getElementById('tex_top-container').style.opacity = `${1 - offsetY / 200}`; */
 
+    
+      document.getElementById('tex_btn-container').style.opacity = `${0 + offsetY * 60}`; 
+    document.getElementById('tex_btn-container').style.transform = `translateY(${offsetY * 3}px)`
+    document.getElementById('tex_btn-container').style.transform = `translateX(${offsetY * -1}px)`; 
+    
+    
+    document.getElementById('tex_btn-container').style.filter = 'grayscale(0.4) blur(0.5px)'; 
+    
+       
+  });
+ 
     // Scroll Listener para tex_btn
 /* window.addEventListener('scroll', function() { */
 /*     const offsetY = window.scrollY; */
