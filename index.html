@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="background-container" id="Background">
+    <img src="/img/3.jpg" alt="fondo.render">
+</div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="img/logo.png" alt="Logo" class="img-fluid" width="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cartas">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="/categorias">Architecture</a></li>
+              <li><a class="dropdown-item" href="/categorias">Art</a></li>
+              <li><a class="dropdown-item" href="/categorias">Construction</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/transcriptions">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="landing">
+    <div class="landing_text">
+      <div class="tex_top"  id="tex_top-container">
+        <h1>
+          Architecture <span>[Services Provider]</span>
+          <img src="https://cdn3.iconfinder.com/data/icons/blue-collar-jobs-1/100/12-512.png"width="50" alt="AutoCAD icon">
+          <img src="https://cdn3.iconfinder.com/data/icons/blue-collar-jobs-1/100/12-512.png" width="50" alt="AutoCAD icon">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ujnihDRAdDb_GZtE8wpakeqwlr0tjyE2Ow&usqp=CAU" width="50" alt="SketchUp icon">
+        </h1>
+      </div>
+      <div class="tex_btn" id="tex_btn-container">
+        <h4>
+          Provider of 2D AutoCAD drawing, 3D SketchUp modeling, and fast D5 Render rendering subcontracting services.
+          We partner with your studio to complement your team with our service.
+          <div class="hero-logos">
+            <button class="btn btn-primary">Contact</button>
+            <img class="hero-logo-instagram" width="20" src="img/instagram.png" alt="Instagram">
+            <img class="hero-logo-linkedin" width="20" src="img/linkedin.png" alt="LinkedIn">
+          </div>
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="transcriptions-container">
+    <button>About Me</button>
+    <h1>Architect | Architecture Professor | Industrial Designer</h1>
+    <h4>
+      I am an Architect graduated from the National University of Córdoba, in 2012. 
+      For 4 years I have been working remotely for outsourced LPS Studio to make combined 2D Autocad Sketch up drawings. 
+      Working through red mark reviews in PDF for US studios: Maine and Hawaii.
+    </h4>
+  </div>
+
+  
+  
+  <div class="categorias-container">
+    <div class="categorias-contenedor">
+      <div class="categoria-content">
+        <h3>Conversión de imágenes a AutoCad</h3>
+        <p>Escanea tus dibujos en papel, planos antiguos con correcciones a mano alzada, bocetos a mano alzada y envíanoslos 
+            por correo electrónico. Después de unos días, te devolveremos archivos de AutoCAD precisos y editables.</p>
+      </div>
+      <div class="image-container">
+        <button class="prev-btn">&lt;</button>
+        <img src="img/a11.jpeg" alt="Imagen 1" class="categoria-image" id="image1">
+        <button class="next-btn">&gt;</button>
+      </div>
+    </div>
+    <div class="categorias-contenedor">
+      <div class="categoria-content">
+        <h3>Transcripción</h3>
+        <p>Usamos nuestras convenciones estándar por defecto, o podemos utilizar tus estándares de capas, 
+            bloques de título y grosores de línea. Ofrecemos transcripciones de AutoCAD de alta calidad a las tarifas más 
+            asequibles del mercado.</p>
+      </div>
+      <div class="image-container">
+        <button class="prev-btn">&lt;</button>
+        <img src="img/a4.jpeg" alt="Imagen 2" class="categoria-image" id="image2">
+        <button class="next-btn">&gt;</button>
+      </div>
+    </div>
+    <div class="categorias-contenedor">
+      <div class="categoria-content">
+        <h3>Renders 3D</h3>
+        <p>Renderizados 3D fotorrealistas, interiores o exteriores, planos de planta en 3D, vistas aéreas o vistas 
+            en vuelo de pájaro. También podemos crear animaciones de peatones o recorridos virtuales 
+            en 3D según tu solicitud.</p>
+      </div>
+      <div class="image-container">
+        <button class="prev-btn">&lt;</button>
+        <img src="img/a7.jpeg" alt="Imagen 3" class="categoria-image" id="image3">
+        <button class="next-btn">&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Programador: Nicolas Gianfelici</h4>
+        <p>Email: contacto@tuempresa.com</p>
+        <p>Teléfono: +123 456 7890</p>
+      </div>
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/instagram.png" alt="Instagram" width="30px" />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/linkedin.png" alt="LinkedIn" width="30px" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Información</h4>
+        <p>© <span id="year"></span> Tu Empresa. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
