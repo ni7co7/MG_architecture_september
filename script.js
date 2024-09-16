@@ -90,32 +90,121 @@ const imageSetsCartas = [
 ////////////////////////////////////////////
   
     // Scroll Listener para Landing
+    window.addEventListener('scroll', function() {
+      const offsetY = window.scrollY;
+      if (offsetY > 0) {
+        /* document.getElementById(' landing_text-contenedor').style.display = 'none';  */
+       
+       /*  document.getElementById('landing_contenedor').style.position = "relative"; */
+       /*  document.getElementById('tex_top-container').style.marginTop = '50%'; */
+      
+       
+       /*  document.getElementById('tex_btn-container').style.marginLeft = 'auto'; */
+        /* document.getElementById('tex_btn-container').style.marginLeft = '10%' */
+       /*  document.getElementById('tex_btn-container').style.width = '20%'; */
+      /*   document.getElementById('tex_btn-container').style.marginRight = '4%' */
+      document.getElementById('tex_btn-container').style.transform = `translateY(${offsetY * -3}px)`;
+      document.getElementById('tex_btn-container').style.backgroundColor = 'transparent';
+   
+      document.getElementById('tex_btn-container--text').style.opacity = `${0 + offsetY * 6}`;
+       /*  document.getElementById('tex_btn-container').style.opacity = `${0 + offsetY * 60}`; */
+      /*   document.getElementById('tex_btn-container').style.transform = `translateY(${offsetY * -1}px)`; */
+        document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * -5}px)`;
+        document.getElementById('tex_top-container').style.marginLeft = 'auto';
+     /*    document.getElementById('tex_top-container').style.width = '80%'; */
+        document.getElementById('tex_top-container').style.marginTop = '8%'
+
+      } else {
+        /* document.getElementById('tex_top-container').style.width = '100%'; */
+        document.getElementById('tex_top-container').style.transform = `translateX(0)`;
+         document.getElementById('tex_top-container').style.marginTop = '0'
+      /*   document.getElementById('tex_btn-container').style.width = '100%'; */
+      /*    document.getElementById('tex_btn-container').style.marginTop = '0%' */
+        document.getElementById('tex_btn-container--text').style.opacity = (0);
+       
+        document.getElementById('hero-logos').style.opacity = (1);
+       /*  document.getElementById('landing_contenedor').style.display = "block"; */
+
+      }
+    });
+
+
+// Media Query Listener para cambiar el ancho en 768px o más
+const mediaQuery = window.matchMedia('(min-width: 769px)');
+
+function handleWidthChange(e) {
+   const container = document.getElementById('tex_btn-container');
+
+   if (e.matches) { // Si el ancho es mayor o igual a 768px
+    /* container.style.opacity = `${0 + offsetY * 60}`; */
+    /* container.style.marginLeft = 'auto';  */
+/*   document.getElementById('tex_btn-container').style.marginLeft = '10%'; */
+container.style.width = '100%';
+container.style.marginLeft = 'auto';
+container.style.marginRight = '1%';
+    
+
+   } else {
+      container.style.width = '100%'; // Restaurar al 100% si es menor
+   }
+};
+
+// Llama la función de inmediato y cuando cambia el tamaño
+mediaQuery.addListener(handleWidthChange);
+handleWidthChange(mediaQuery);
+
 
 
    // Scroll Listener para tex_top
- window.addEventListener('scroll', function() {
-    const offsetY = window.scrollY;
-    document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * 3}px)`;
-    document.getElementById('tex_top-container').style.filter = 'drop-shadow(5px 5px 0 blue) hue-rotate(-337deg) drop-shadow(5px 5px 0 #ff1500)';
-    document.getElementById('tex_top-container').style.border= '1px solid blue';
+ /* window.addEventListener('scroll', function() { */
+ /*    const offsetY = window.scrollY; */
+ /*    if (offsetY > 0) { */
+/*       document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * .2}px)`;
+      document.getElementById('tex_top-container').style.filter = 'drop-shadow(5px 5px 0 blue) hue-rotate(-337deg) drop-shadow(5px 5px 0 #ff1500)';
+      document.getElementById('tex_top-container').style.border= '1px solid blue';
+ */     
+ /* document.getElementById('tex_top-container').style.width = '50%';  */
+ /* document.getElementById('tex_btn-container').style.width = '50%';  */
+ /* document.getElementById('tex_btn-container').style.marginLeft = 'auto'; */
+ 
+ 
+
+  
+
+   /*  } else { */
+      /* document.getElementById('tex_top-container').style.transform = `translateX(0)`; */
+      /* document.getElementById('tex_top-container').style.filter = 'none'; */
+      /* document.getElementById('tex_top-container').style.border= 'none'; */
+      /* document.getElementById('tex_top-container').style.width = '100%';  */
+  
+   /*  } */
      /*  document.getElementById('tex_top-container').style.opacity = `${1 - offsetY / 200}`; */
 
     
-      document.getElementById('tex_btn-container').style.opacity = `${0 + offsetY * 60}`; 
-    document.getElementById('tex_btn-container').style.transform = `translateY(${offsetY * 3}px)`
-    document.getElementById('tex_btn-container').style.transform = `translateX(${offsetY * -1}px)`; 
-    
-    
-    document.getElementById('tex_btn-container').style.filter = 'grayscale(0.4) blur(0.5px)'; 
+    /*   document.getElementById('tex_btn-container').style.opacity = `${0 + offsetY * 60}`;  */
+   /*  document.getElementById('tex_btn-container').style.transform = `translateY(${offsetY * .2}px)` */
+   /*  document.getElementById('tex_btn-container').style.transform = `translateX(${offsetY * -1}px)`;  */
+   /* document.getElementById('tex_btn-container').style.backgroundColor = 'transparent'; */
+   
+   /*  document.getElementById('tex_btn-container').style.filter = 'grayscale(0.4) blur(0.5px)';  */
     
        
+ /*  }); */
+
+/*     // Scroll Listener para transcriptions */
+  window.addEventListener('scroll', function() {
+    const offsetY = window.scrollY;
+    if (offsetY > 0) {
+/*       document.getElementById('transcriptions-container').style.backgroundColor = 'transparent'; // Esto remueve el color de fondo
+ */
+
+    } else {
+/*       document.getElementById('transcriptions-container').style.backgroundColor = 'white'; // Esto remueve el color de fondo
+ */
+    }
+    
+    /* document.getElementById('transcriptions-container').style.filter = 'grayscale(1) blur(0.6px)'; */
   });
- 
-    // Scroll Listener para tex_btn
-/* window.addEventListener('scroll', function() { */
-/*     const offsetY = window.scrollY; */
-/*     document.getElementById('tex_btn-container').style.transform = `translateX(${offsetY * -4}px)`; */
-/*   }); */
 
 
   ////////////////////////////////////////////
