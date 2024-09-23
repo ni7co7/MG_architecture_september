@@ -93,34 +93,55 @@ const imageSetsCartas = [
     window.addEventListener('scroll', function() {
       const offsetY = window.scrollY;
       if (offsetY > 0) {
+         document.getElementById('landing_overlayID').style.opacity = `${.65  + offsetY * 60}`; 
+        document.getElementById('landing_overlayID').style.width = '50%';
+            document.getElementById('landing_overlayID').style.marginLeft = 'auto';
+             document.getElementById('landing_overlayID').style.paddingTop = '10%'
+          document.getElementById('landing_overlayID').style.backgroundColor =     '#33333354';
+          ;
         /* document.getElementById(' landing_text-contenedor').style.display = 'none';  */
        
        /*  document.getElementById('landing_contenedor').style.position = "relative"; */
        /*  document.getElementById('tex_top-container').style.marginTop = '50%'; */
       
        
-       /*  document.getElementById('tex_btn-container').style.marginLeft = 'auto'; */
+    /*     document.getElementById('tex_btn-container').style.marginLeft = 'auto'; */
         /* document.getElementById('tex_btn-container').style.marginLeft = '10%' */
-       /*  document.getElementById('tex_btn-container').style.width = '20%'; */
-      /*   document.getElementById('tex_btn-container').style.marginRight = '4%' */
-      document.getElementById('tex_btn-container').style.transform = `translateY(${offsetY * -3}px)`;
-      document.getElementById('tex_btn-container').style.backgroundColor = 'transparent';
+/*         document.getElementById('tex_btn-container').style.width = '50%';
+ */       /*  document.getElementById('tex_btn-container').style.height = '250px'; */
+/*         document.getElementById('tex_btn-container').style.marginRight = 'auto'  */  
+    /* document.getElementById('tex_btn-container').style.transform = `translateX(${offsetY * 1}px)`; */
+      /* document.getElementById('tex_btn-container').style.backgroundColor = 'transparent'; */
    
-      document.getElementById('tex_btn-container--text').style.opacity = `${0 + offsetY * 6}`;
-       /*  document.getElementById('tex_btn-container').style.opacity = `${0 + offsetY * 60}`; */
-      /*   document.getElementById('tex_btn-container').style.transform = `translateY(${offsetY * -1}px)`; */
-        document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * -5}px)`;
-        document.getElementById('tex_top-container').style.marginLeft = 'auto';
-     /*    document.getElementById('tex_top-container').style.width = '80%'; */
-        document.getElementById('tex_top-container').style.marginTop = '8%'
+/*       document.getElementById('tex_btn-container--text').style.opacity = `${0 + offsetY * 6}`;
+ */        document.getElementById('tex_btn-container').style.opacity = `${0 + offsetY * 60}`; 
+        document.getElementById('tex_btn-container').style.transform = `translateX(${offsetY * 0}px)`;
+        document.getElementById('tex_btn-container').style.marginTop = '12%'
+
+
+        document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * 0}px)`;
+        document.getElementById('tex_top-container').style.marginRight = 'auto';
+        document.getElementById('tex_top-container').style.width = '100%';
+       /*  document.getElementById('tex_top-container').style.marginTop = '.2%'; */
+     
+       
+ 
+       
+       /*  document.getElementById(' tex_top-container__text').style.transform = `translateX(${offsetY * 1}px)`; */
+        
 
       } else {
-        /* document.getElementById('tex_top-container').style.width = '100%'; */
+        document.getElementById('tex_top-container').style.width = '100%';
+        document.getElementById('tex_top-container').style.height = '100%';
+        document.getElementById('tex_top-container').style.textAlign = 'center';
+        /*    document.getElementById('tex_btn-container').style.marginTop = '0%' */
         document.getElementById('tex_top-container').style.transform = `translateX(0)`;
          document.getElementById('tex_top-container').style.marginTop = '0'
-      /*   document.getElementById('tex_btn-container').style.width = '100%'; */
+        document.getElementById('tex_top-container__img').style.width = '100%';
       /*    document.getElementById('tex_btn-container').style.marginTop = '0%' */
-        document.getElementById('tex_btn-container--text').style.opacity = (0);
+       /*  document.getElementById('tex_btn-container--text').style.opacity = (0); */
+       document.getElementById('tex_btn-container').style.opacity = (0);
+       
        
         document.getElementById('hero-logos').style.opacity = (1);
        /*  document.getElementById('landing_contenedor').style.display = "block"; */
@@ -136,16 +157,28 @@ function handleWidthChange(e) {
    const container = document.getElementById('tex_btn-container');
 
    if (e.matches) { // Si el ancho es mayor o igual a 768px
-    /* container.style.opacity = `${0 + offsetY * 60}`; */
+   /*  container.style.visibility = 'hidden'; */
+/*     container.style.display = 'none'; */
+  /*   container.style.opacity = `${0 + offsetY * 600}`; */
     /* container.style.marginLeft = 'auto';  */
 /*   document.getElementById('tex_btn-container').style.marginLeft = '10%'; */
-container.style.width = '100%';
-container.style.marginLeft = 'auto';
-container.style.marginRight = '1%';
-    
+container.style.width = '50%';
+container.style.marginRight = '50%';
+container.style.position = 'absolute';
+
+/* container.style.height = '250px'; */
+/* container.style.backgroundColor = 'transparent'; */
+   container.style.opacity = `0`; 
+/* container.style.display = 'none'; */
+
 
    } else {
-      container.style.width = '100%'; // Restaurar al 100% si es menor
+   /*  container.style.visibility = 'visible'; */
+     /*  container.style.width = '100%'; */ // Restaurar al 100% si es menor
+      /*  container.style.opacity = `${0 + offsetY * 60}`; */
+     /*  container.style.display = 'block'; */
+      /* container.style.opacity = `1`;  */
+    
    }
 };
 
