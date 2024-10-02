@@ -1,0 +1,177 @@
+/* General styles for navbar */
+
+
+
+
+
+
+
+nav  {
+  
+  height: 70px;
+overflow: hidden;
+ align-content: center;
+
+ 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+ z-index: 1; 
+ background-color:hsl(0, 0%, 100%);
+/*     background-color:hsl(204, 86%, 53%); */
+   /*  background-color:hsl(171, 100%, 41%); */
+   /*  */
+   
+  }
+  
+  
+  
+  #navbarNav{
+    
+        background-color:hsl(203, 48%, 17%); 
+       
+     z-index: -1; 
+   align-content: center;
+     height: 50%;
+     position: fixed;
+     top: 0;
+ /*      */
+     right: 0;
+     bottom: 0;
+     left: 0;
+ /* margin-top: 7vh; */
+/*  padding-top: 2rem; */
+  }
+  #navbarNav a {
+   
+    color: aliceblue;
+  }
+  
+  
+  
+  .navbar-brand {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+ /*  margin:  15%; */
+ /*  padding: 1.2rem; */
+  }
+  .navbar-brand p{
+    color:  #007bff;
+    display: flex;
+    font-size: large;
+    font-weight: bolder;
+    letter-spacing: 1px;
+  /*   line-height: 60px; */
+  display: flex;
+ /*  flex-direction: column; */
+  }
+  .navbar-brand span{
+        font-style: italic;
+        font-size: small;
+        font-weight: lighter;
+        color: #df107e;
+        letter-spacing: 4.1px;
+       /*  margin: .4rem; */
+
+    
+  }
+  .navbar-brand img {
+    margin: .1rem;
+   /*  padding: .1rem; */
+      width: 69px;
+      height: auto;
+      /* filter: contrast(175%) brightness(3%); */
+      filter: hue-rotate(-180deg);
+filter: invert(-50%);
+     
+     
+    }
+    
+    .navbar-nav .nav-link {
+        text-align: center;
+   /*    color: #000000; */
+     /*  margin-right: 15px; */
+    }
+    
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+      background-color: black;
+    }
+    
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .dropdown-item:hover {
+      color: #007bff;
+    }
+    
+
+    @media (min-width: 768px) {
+      nav {
+      /*   margin: 1.3rem; */
+        padding: .9rem;
+    font-size: 1.6rem;
+       
+      }
+    
+      .navbar-nav .nav-link {
+       
+      }
+      .navbar-nav .dropdown-menu {
+     margin: 1.9rem;
+     padding: 1.2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-left:none ;
+      border-right: none ;
+      font-weight: bolder;
+      font-size: xx-large;
+      letter-spacing: .3rem;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

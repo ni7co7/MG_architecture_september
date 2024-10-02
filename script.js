@@ -93,12 +93,12 @@ const imageSetsCartas = [
     window.addEventListener('scroll', function() {
       const offsetY = window.scrollY;
       if (offsetY > 0) {
-         document.getElementById('landing_overlayID').style.opacity = `${.65  + offsetY * 60}`; 
-        document.getElementById('landing_overlayID').style.width = '50%';
-            document.getElementById('landing_overlayID').style.marginLeft = 'auto';
-             document.getElementById('landing_overlayID').style.paddingTop = '10%'
-          document.getElementById('landing_overlayID').style.backgroundColor =     '#33333354';
-          ;
+         /* document.getElementById('landing_overlayID').style.opacity = `${.65  + offsetY * 60}`;  */
+       /*   document.getElementById('landing_overlayID').style.backgroundImage = "none";  */
+           /*  document.getElementById('landing_overlayID').style.marginLeft = 'auto'; */
+            /*  document.getElementById('landing_overlayID').style.paddingBottom = '50%' */
+/*           document.getElementById('landing_overlayID').style.backgroundColor =     '#33333354';
+ */          
         /* document.getElementById(' landing_text-contenedor').style.display = 'none';  */
        
        /*  document.getElementById('landing_contenedor').style.position = "relative"; */
@@ -114,14 +114,39 @@ const imageSetsCartas = [
       /* document.getElementById('tex_btn-container').style.backgroundColor = 'transparent'; */
    
 /*       document.getElementById('tex_btn-container--text').style.opacity = `${0 + offsetY * 6}`;
- */        document.getElementById('tex_btn-container').style.opacity = `${0 + offsetY * 60}`; 
-        document.getElementById('tex_btn-container').style.transform = `translateX(${offsetY * 0}px)`;
-        document.getElementById('tex_btn-container').style.marginTop = '12%'
+ */   /*      document.getElementById('tex_btn-container').style.opacity = `${0 + offsetY * 60}`;  */
+      /*   document.getElementById('tex_btn-container').style.transform = `translateX(${offsetY * -4}px)`; */
+      /*   document.getElementById('tex_btn-container').style.marginRight = 'auto'; */
+      /*   document.getElementById('tex_btn-container').style.width = '50%'; */
+      /*   document.getElementById('tex_btn-container').style.paddingTop = '5%'; */
+      /*   document.getElementById('tex_btn-container').style.marginTop = '10%'; */
 
 
-        document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * 0}px)`;
-        document.getElementById('tex_top-container').style.marginRight = 'auto';
-        document.getElementById('tex_top-container').style.width = '100%';
+
+       /*  document.getElementById('tex_top-container').style.transform = `translateX(${offsetY * 0}px)`; */
+       /*  document.getElementById('tex_top-container').style.display = 'block'; */
+/*         document.getElementById('tex_top-container').style.transform = `translateY(${offsetY * .1}px)`;
+ */      /*   document.getElementById('tex_top-container').style.marginLeft = 'auto'; */
+      /*   document.getElementById('tex_top-container').style.width = '50%'; */
+      /*   document.getElementById('tex_top-container').style.height = '50%'; */
+      /*   document.getElementById('tex_top-container__text').style.paddingTop = '25%'; */
+      /*    document.getElementById('tex_top-container__text').style.transform = `translateY(${offsetY * 1}px)`;  */
+
+      /*  */
+       /*  document.getElementById('  tex_top-container__text').style.height = '100%'; */
+       /*  document.getElementById('tex_top-container').style.marginTop = '10%'; */
+       
+        /* document.getElementById('tex_top-container__img').style.maxWidth = '110%'; */
+      /*   document.getElementById('tex_top-container__img').style.width = '50%'; */
+      /* document.getElementById('tex_top-container__text').style.paddingTop = '30%'; */
+      /*   document.getElementById('tex_top-container__img').style.transform = `translateX(${offsetY * 4}px)`; */
+        /*  document.getElementById('tex_top-container__img').style.transform = `translateY(${offsetY * -.5}px)`;  */
+      /*   document.getElementById('tex_top-container__img').style.marginLeft = '50%'; */
+      /*   document.getElementById('tex_top-container__img').style.width = '40%'; */
+      /*   document.getElementById('tex_top-container__img').style.marginBottom = '21%'; */
+     /*     */
+       
+
        /*  document.getElementById('tex_top-container').style.marginTop = '.2%'; */
      
        
@@ -131,61 +156,125 @@ const imageSetsCartas = [
         
 
       } else {
-        document.getElementById('tex_top-container').style.width = '100%';
-        document.getElementById('tex_top-container').style.height = '100%';
-        document.getElementById('tex_top-container').style.textAlign = 'center';
+/*         document.getElementById('landing_overlayID').style.opacity = `1`; 
+ *//*         document.getElementById('landing_overlayID').style.width = '100%';
+ *//*             document.getElementById('landing_overlayID').style.marginLeft = '0';
+ */           /*   document.getElementById('landing_overlayID').style.paddingTop = '10%' */
+/*           document.getElementById('landing_overlayID').style.backgroundColor =     '#333333';
+ */      /*     document.getElementById('tex_top-container').style.display = 'flex'; */
+      /*   document.getElementById('tex_top-container').style.width = '100%'; */
+        /* document.getElementById('  tex_top-container__text').style.height = '100%'; */
+       /*  document.getElementById('tex_top-container').style.height = '110%'; */
+      /*   document.getElementById('tex_top-container__img').style.width = '18%'; */
+      /*   document.getElementById('tex_top-container__img').style.height = '30%'; */
+
+         /* document.getElementById('tex_top-container__img').style.marginLeft = 'auto';  */
+      /*   document.getElementById('tex_top-container').style.height = '100%'; */
+      /*   document.getElementById('tex_top-container').style.textAlign = 'center'; */
         /*    document.getElementById('tex_btn-container').style.marginTop = '0%' */
-        document.getElementById('tex_top-container').style.transform = `translateX(0)`;
-         document.getElementById('tex_top-container').style.marginTop = '0'
-        document.getElementById('tex_top-container__img').style.width = '100%';
+    /*     document.getElementById('tex_top-container').style.transform = `translateX(0)`; */
+    /*      document.getElementById('tex_top-container').style.marginTop = '0' */
+    /*     document.getElementById('tex_top-container__img').style.width = '100%'; */
       /*    document.getElementById('tex_btn-container').style.marginTop = '0%' */
        /*  document.getElementById('tex_btn-container--text').style.opacity = (0); */
-       document.getElementById('tex_btn-container').style.opacity = (0);
+/*        document.getElementById('tex_btn-container').style.opacity = (0);
+ */       
        
-       
-        document.getElementById('hero-logos').style.opacity = (1);
+       /*  document.getElementById('hero-logos').style.opacity = (1); */
        /*  document.getElementById('landing_contenedor').style.display = "block"; */
 
       }
     });
 
 
+   
+   
+   
+
+
+
+   
+
+   
+   
+
+// Media Query Listener para cambiar el ancho en 599px o menos 
+
+const mediaQuery = window.matchMedia('(max-width: 599px)');
+  function handleWidthChange(e) {
+     const container = document.getElementById('tex_top-container');
+     const containerBtn = document.getElementById('tex_btn-container');
+  if (e.matches) { // Si el ancho es igual o menor a 599px
+    window.addEventListener('scroll', function() {
+      const offsetY = window.scrollY;
+          if (offsetY > 0) {
+            container.style.transform = `translateX(${offsetY * -2}px)`;
+            containerBtn.style.transform = `translateY(${offsetY * -2.8}px)`;
+          } else {
+            container.style.transform = `translateX(${offsetY * 0}px)`;
+            containerBtn.style.transform = `translateY(${offsetY * 0}px)`;
+          }
+    });
+  
+  } else {
+    
+    
+    
+         
+             
+         
+         
+         
+    };
+   
+  
+  }
+  
+;
+mediaQuery.addListener(handleWidthChange);
+handleWidthChange(mediaQuery);
 // Media Query Listener para cambiar el ancho en 768px o más
-const mediaQuery = window.matchMedia('(min-width: 769px)');
+/* const mediaQuery = window.matchMedia('(min-width: 769px)'); */
 
-function handleWidthChange(e) {
-   const container = document.getElementById('tex_btn-container');
+/* function handleWidthChange(e) { */
+   /* const container = document.getElementById('tex_btn-container'); */
 
-   if (e.matches) { // Si el ancho es mayor o igual a 768px
+   /* if (e.matches) { */ // Si el ancho es mayor o igual a 768px
    /*  container.style.visibility = 'hidden'; */
 /*     container.style.display = 'none'; */
   /*   container.style.opacity = `${0 + offsetY * 600}`; */
     /* container.style.marginLeft = 'auto';  */
 /*   document.getElementById('tex_btn-container').style.marginLeft = '10%'; */
-container.style.width = '50%';
-container.style.marginRight = '50%';
-container.style.position = 'absolute';
+/* container.style.width = '50%'; */
+/* container.style.height = '50%'; */
+/* container.style.transform = `translateX(${offsetY * -1}px)`;  */
+
+
+
+/* container.style.marginRight = 'auto'; */
+/* container.style.marginBottom = '-50%'; */
+/* container.style.position = 'absolute'; */
 
 /* container.style.height = '250px'; */
 /* container.style.backgroundColor = 'transparent'; */
-   container.style.opacity = `0`; 
+ /*   container.style.opacity = `0`;  */
 /* container.style.display = 'none'; */
 
 
-   } else {
+/*    } else { */
    /*  container.style.visibility = 'visible'; */
      /*  container.style.width = '100%'; */ // Restaurar al 100% si es menor
       /*  container.style.opacity = `${0 + offsetY * 60}`; */
      /*  container.style.display = 'block'; */
       /* container.style.opacity = `1`;  */
     
-   }
-};
+/*    } */
+/* }; */
 
 // Llama la función de inmediato y cuando cambia el tamaño
-mediaQuery.addListener(handleWidthChange);
-handleWidthChange(mediaQuery);
-
+/* mediaQuery.addListener(handleWidthChange); */
+/* handleWidthChange(mediaQuery); */
+/*  */
 
 
    // Scroll Listener para tex_top

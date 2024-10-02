@@ -4,52 +4,13 @@
   padding: 0;
 /* overflow: hidden; */
 overflow-x: hidden;
+
 }
 
-
-
-/* General styles for navbar */
-nav  {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 111;
- 
- 
+body {
+  font-family: 'Inter', sans-serif;
 }
-.navbar-brand img {
-    width: 50px;
-    height: auto;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #333;
-    margin-right: 15px;
-  }
-  
-  .navbar-nav .dropdown-menu {
-    
-  }
-  
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .dropdown-item:hover {
-    color: #007bff;
-  }
-  
-  /* Responsive adjustments */
- /*  @media (max-width: 768px) { */
- /*    .navbar-nav { */
- /*      width: 100%; */
- /*      text-align: center; */
- /*    } */
- /*   */
- /*    .navbar-nav .nav-link { */
- /*      margin-right: 0; */
- /*      margin-bottom: 10px; */
- /*    } */
- /*  } */
+
   
 
   .background-container {
@@ -171,238 +132,6 @@ nav  {
 
 
 
-/* ////////////////   LANDING    //////////////*/
-
-.landing {
- /*  display: flex; */
- /*  flex-direction: row; */
- /*  justify-content: center; */
- /*  align-items: center; */
-  /* width: 100%; */
-   /* height: 75vh; */
-   /*  overflow: hidden; */
-   /* overflow: visible; */
-   /* border: #0056b3 2px solid; */
-  }
-  .landing_overlay {
-  
-  margin: 0;
-  padding: 0;
-  /* z-index: -1; */
-    background-color: #333333;
-    /* border: #0056b3 2px solid; */
-  }
-  .landing_text {
-    width: 100%;
-   /*  display: flex; */
-   /*  flex-direction: column; */
-   /*  justify-content: center; */
-   /*  align-items: center; */
-    
-  }
-  .tex_top {
-    perspective: 1000px; /* Controla la profundidad de la perspectiva */
-  }
-  #tex_top-container__img
-  /* .tex_top img */ {
-    border: #3de1f0 2px solid;
-    border-radius: 19px;
-    margin: .2rem;
-    padding: .2rem;
-    width: 23%;
-    height: 23%;
-    overflow: hidden;
-   /*  transform: translateZ(0); */ /* Opcional: activa el uso de GPU para renderizar */
-  }
-  
-  /* Ejemplo de un efecto 3D al pasar el ratón por encima */
-  .tex_top img:hover {
-    /* transform: scale(1.05) rotateY(10deg); */ /* Ajusta el efecto de 3D según sea necesario */
-  }
-  
-  .tex_top {
-   text-align: left;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   /*  margin: .9rem; */
-    padding: .9rem;
-    background-color: #007bff;
-    text-align: center;
-   /*  overflow: hidden; */
-    
-  }
-  .tex_top h1 {
-    font-size: 3.9rem;
-  }
-  .landing  {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   /*  font-size: small; */
-    /* margin: .7rem; */
-  }
-  
-  
-  
-  .tex_top span {
-    display: flex;
-flex-direction: row;
-    font-size: .9rem;
-    color:#fff;
-  
-    overflow: hidden;
-  }
-  .tex_top img {
-    border: #3de1f0 2px solid;
-    border-radius: 19px;
-    margin: .2rem;
-    padding: .2rem;
-  /*  width: 50%; */
-  /*  height: 50%; */
-   overflow: hidden;
-  }
-  
-  .tex_btn {
-  
-    background-color: hsl(141, 71%, 48%)	;
-  
-    margin: 1.2rem;
-
-  /*  margin-top: 30%; */
-  /*  margin-bottom: 5rem; */
-   padding: 1.2rem;
-   /* background-color: #2eb11f; */
-   text-align: center;
-   /* overflow: visible; */
-   text-align: center;
-   /* border: #333 1px solid; */
-  
-   
-  }
-  .tex_btn h4 {
-   /*   */
-   /*  background-color: #2eb11f; */
-   /*  opacity: 0; */
-    color: #030b14;
- font-size:1.9rem;
- padding: .9rem;
- /* margin-top: 7%; */
- 
-
- 
-  }
-  #hero-logos {
-    opacity: 1;
-  }
-  .tex_btn .hero-logos {
- 
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- margin-top: .5rem;
- gap: .5rem;
-  }
-  .tex_btn .hero-logos button {
-  margin: .7rem;
-  }
-  @media (max-width: 768px) {
-    .tex_top h1{
-      font-size: 2.1rem;
-      margin: .9rem;
-      /* margin-left: 50%; */
-      
-     }
-
-     .tex_top img {
-      border: #3de1f0 2px solid;
-      border-radius: 19px;
-      margin: .2rem;
-      padding: .3rem;
-    /*   width: 20px; */
-    /*   height: 20px; */
-      
-    }
-
-  }
-  @media (min-width: 769px) {
-    .landing {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-   /*     */
-  
-  
-  
-    /* border: #0056b3 2px solid; */
-    }
-   /*  .landing_overlay { */
-   /*    z-index: 222; */
-   /*    background-color: #333; */
-   /*    border: #0056b3 2px solid; */
-   /*  } */
-    .landing-text {
-       display: flex;
-       flex-direction: row;
-        /*  overflow: hidden; */
-        overflow: visible;
-    }
-    .tex_top {
-      text-align: left;
-      /*  */
-      /* display: flex; */
-      /* flex-direction: row; */
-      /* justify-content: center; */
-      /* align-items: center; */
-    }
-    .tex_top h1{
-      /* text-align: left; */
-     font-size: 3.6rem;
-     margin: .9rem;
-     padding: .7rem;
-     overflow: hidden;
-    /* s */
-  /*   overflow: visible; */
-    }
-    .tex_top span {
-     /*  overflow: visible; */
-     
-    }
-    .tex_top img {
-      border: #3de1f0 2px solid;
-      border-radius: 19px;
-      margin: .2rem;
-      padding: .2rem;
-     /*  width: 20%; */
-     /*  height: 20%; */
-      
-    }
-   
-   
-    .tex_btn {
-      z-index: 111;
-    
-      padding:  .9rem;
-      margin: 1.2rem;
-     /* padding: 2.3rem; */
-     /* background-color: #2eb11f; */
-     overflow-x: visible; 
-     z-index: 333333;
-    }
-    #tex_btn-container {
-     
-    }
-    
-    
-    .tex_btn h4 {
-     /*  opacity: 0; */
-      font-size: larger;
-      /* background-color: #2eb11f; */
-    }
-  }
-
-
-
 
 
   /* //////   TRANSCRIPTIONS   ///////  */
@@ -414,11 +143,11 @@ flex-direction: row;
     text-align: center;
    /*  margin: 100px auto; */
   /*   max-width: 800px; */
-    padding: 1rem;
+    padding: 2rem;
   /*   margin-top: 20%; */
   
     z-index: 1;
-    height: 300px;
+    height: 100%;
     
   
   }
@@ -444,6 +173,8 @@ flex-direction: row;
    
     font-size: 1.1rem;
     line-height: 1.5;
+    margin: .6rem;
+    padding: .8rem;
   }
 
   @media (min-width: 769px) {
