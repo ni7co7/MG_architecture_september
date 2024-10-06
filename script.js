@@ -88,7 +88,8 @@ const imageSetsCartas = [
 
    
 ////////////////////////////////////////////
-  
+
+
     // Scroll Listener para Landing
     window.addEventListener('scroll', function() {
       const offsetY = window.scrollY;
@@ -104,7 +105,7 @@ const imageSetsCartas = [
        /*  document.getElementById('landing_contenedor').style.position = "relative"; */
        /*  document.getElementById('tex_top-container').style.marginTop = '50%'; */
       
-       
+      /*  document.getElementById(tex_top-text).style.transform = `translateX(${offsetY * -4}px)`; */
     /*     document.getElementById('tex_btn-container').style.marginLeft = 'auto'; */
         /* document.getElementById('tex_btn-container').style.marginLeft = '10%' */
 /*         document.getElementById('tex_btn-container').style.width = '50%';
@@ -202,17 +203,32 @@ const imageSetsCartas = [
 
 const mediaQuery = window.matchMedia('(max-width: 599px)');
   function handleWidthChange(e) {
-     const container = document.getElementById('tex_top-container');
+    const  top = document.getElementById('tex_top-text');
+    const  imagenena = document.getElementById('tex_top-ima');
+    const nosotros = document.getElementById('transcriptions-container'); 
+    const navbar = document.getElementById('navbar');
+    const cartas = document.getElementById('cartas');
+    /*  const container = document.getElementById('tex_top-container'); */
      const containerBtn = document.getElementById('tex_btn-container');
   if (e.matches) { // Si el ancho es igual o menor a 599px
     window.addEventListener('scroll', function() {
       const offsetY = window.scrollY;
           if (offsetY > 0) {
-            container.style.transform = `translateX(${offsetY * -2}px)`;
-            containerBtn.style.transform = `translateY(${offsetY * -2.8}px)`;
+            top.style.transform = `translateX(${offsetY * -4}px)`;
+            imagenena.style.transform = `translateX(${offsetY * 4}px)`;
+            containerBtn.style.transform = `translateY(${offsetY * -.2}px)`;
+            navbar.style.opacity = 1;
+         /*    navbar.style.zIndex = -1; */
+         /*    nosotros.style.transform = `translateY(${offsetY * -1}px)`; */
           } else {
-            container.style.transform = `translateX(${offsetY * 0}px)`;
+            top.style.transform  = `translateX(${offsetY * 0}px)`;
+            imagenena.style.transform= `translateX(${offsetY * 0}px)`;
             containerBtn.style.transform = `translateY(${offsetY * 0}px)`;
+            nosotros.style.transform = `translateY(${offsetY * 0}px)`; 
+            navbar.style.opacity = 0;
+           /*  navbar.style.display = "bolck"; */
+           /* navbar.style.position = 1; */
+        /*    navbar.style.zIndex = 0; */
           }
     });
   

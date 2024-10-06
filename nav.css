@@ -7,40 +7,52 @@
 
 
 nav  {
-  
-  height: 70px;
-overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  opacity: 0;
+ /*  transform: skew(10deg, 10deg); */
+  height: 210px;
+overflow-x: hidden;
  align-content: center;
-
- 
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
- z-index: 1; 
- background-color:hsl(0, 0%, 100%);
+    
+/*  z-index: -222;  */
+/*  background-color:hsla(0, 55%, 53%, 0.131); */
 /*     background-color:hsl(204, 86%, 53%); */
    /*  background-color:hsl(171, 100%, 41%); */
    /*  */
    
   }
-  
-  
+  .container-fluid{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-items: left;
+  }
+  .navbar-toggler{
+   color: #000000;
+  }
   
   #navbarNav{
-    
+     transform: skew(-10deg, -10deg);
         background-color:hsl(203, 48%, 17%); 
        
-     z-index: -1; 
+   /*   z-index: -1;  */
    align-content: center;
-     height: 50%;
-     position: fixed;
+     height: 100%;
+     /* position: fixed; */
      top: 0;
  /*      */
      right: 0;
-     bottom: 0;
+     bottom: 1;
      left: 0;
+     overflow: visible;
  /* margin-top: 7vh; */
 /*  padding-top: 2rem; */
   }
@@ -56,25 +68,33 @@ overflow: hidden;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
- /*  margin:  15%; */
- /*  padding: 1.2rem; */
+    overflow: hidden;
+  margin:  15%;
+  padding: 1.2rem;
+/*  transform: skew(10deg, 10deg); */
   }
   .navbar-brand p{
     color:  #007bff;
     display: flex;
-    font-size: large;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
     font-weight: bolder;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
   /*   line-height: 60px; */
   display: flex;
  /*  flex-direction: column; */
+ transform: skew(10deg, 10deg);
+ overflow: hidden;
   }
   .navbar-brand span{
-        font-style: italic;
-        font-size: small;
-        font-weight: lighter;
+   transform: skew(-30deg, -30deg); 
+       /*  font-style: italic; */
+      /*   font-size: large; */
+        /* font-weight: lighter; */
         color: #df107e;
-        letter-spacing: 4.1px;
+       /*  letter-spacing: 4.1px; */
        /*  margin: .4rem; */
 
     
@@ -82,16 +102,17 @@ overflow: hidden;
   .navbar-brand img {
     margin: .1rem;
    /*  padding: .1rem; */
-      width: 69px;
+   /*    width: 69px; */
       height: auto;
       /* filter: contrast(175%) brightness(3%); */
       filter: hue-rotate(-180deg);
-filter: invert(-50%);
-     
+/* filter: invert(-50%); */
+      /* transform: skew(10deg, 10deg); */
      
     }
     
     .navbar-nav .nav-link {
+     /*  overflow-y: visible; */
         text-align: center;
    /*    color: #000000; */
      /*  margin-right: 15px; */
@@ -99,7 +120,8 @@ filter: invert(-50%);
     
     .navbar-nav .dropdown-menu {
         text-align: center;
-      background-color: black;
+      background-color: rgb(165, 115, 115);
+  
     }
     
     .navbar-nav .nav-link:hover,
@@ -110,9 +132,11 @@ filter: invert(-50%);
 
     @media (min-width: 768px) {
       nav {
+        
       /*   margin: 1.3rem; */
         padding: .9rem;
     font-size: 1.6rem;
+    background-color: rgb(255, 255, 255);
        
       }
     

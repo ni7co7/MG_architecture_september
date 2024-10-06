@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar Example</title>
+  <link rel="preload" href="css/normalize.css" as="style">
+<link rel="stylesheet" href="css/normalize.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="nav.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <link href="landing.css" rel="stylesheet">
-  <link href="nav.css" rel="stylesheet">
+  
+  <link href="Transcriptions.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +19,13 @@
 </head>
 <body>
 <div class="background-container" id="Background">
-    <img src="/img/casa-verde.webp" alt="fondo.render">
+    <img src="/img/a1.jpg" alt="fondo.render">
+    <!-- <img src="/img/a2.jpg" alt="fondo.render"> -->
 </div>
-  <nav  class="navbar fixed-top " >
+  <nav  class="navbar fixed-top " id = "navbar">
     <div  class="container-fluid">
       <a class="navbar-brand" href="/">
-        <p>MG<span>studio</span></p>
+        <p>M<span>G</span></p>
         <img src="img/logo.png" alt="Logo" class="img-fluid" width="50">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,12 +33,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/cartas">Products</a>
-          </li>
+         <!--  <li class="nav-item"> -->
+         <!--    <a class="nav-link" href="/">Home</a> -->
+         <!--  </li> -->
+        <!--   <li class="nav-item"> -->
+        <!--     <a class="nav-link" href="/cartas">Products</a> -->
+        <!--   </li> -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
@@ -44,9 +49,9 @@
               <li><a class="dropdown-item" href="/categorias">Construction</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/transcriptions">About Me</a>
-          </li>
+         <!--  <li class="nav-item"> -->
+         <!--    <a class="nav-link" href="/transcriptions">About Me</a> -->
+         <!--  </li> -->
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
           </li>
@@ -54,20 +59,22 @@
       </div>
     </div>
   </nav>
-  <div class="landing_overlay" id="landing_overlayID" >
+ <!--  <div class="landing_overlay" id="landing_overlayID" > </div> -->
   <div class="landing" id="landing_contenedor">
     <div class="landing_text" id="landing_text-contenedor">
       <div class="tex_top"  id="tex_top-container">
+        <div id="tex_top-text">
           <h1 id="tex_top-container__text"  > Architecture <span>[Services Provider]</span></h1>
-          <div class="tex_top_image" id="tex_top-container__img">
-             <img src="https://cdn3.iconfinder.com/data/icons/blue-collar-jobs-1/100/12-512.png"width="20" alt="AutoCAD icon">
-             <img src="/img/casaicon.jpg" width="20" alt="AutoCAD icon">
-             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ujnihDRAdDb_GZtE8wpakeqwlr0tjyE2Ow&usqp=CAU" width="20" alt="SketchUp icon">
-          </div>
         </div>
+        <div class="text_top-ima"  id="tex_top-ima">
+           <img src="/img/Cadtecla.png" width="20" alt="AutoCAD icon">
+           <img src="https://cdn.prod.website-files.com/601064f495f4b4967f921aa9/641e159dffb2e69d166b8a3a_r.png"width="20" alt="AutoCAD icon">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ujnihDRAdDb_GZtE8wpakeqwlr0tjyE2Ow&usqp=CAU" width="20" alt="SketchUp icon">
+        </div>
+      </div>
       <div class="tex_btn" id="tex_btn-container">
-          <h4 id="tex_btn-container--text">  Provider of 2D AutoCAD drawing, 3D SketchUp modeling, and fast D5 Render rendering subcontracting services.
-                We partner with your studio to complement your team with our service.</h4>
+          <h3 id="tex_btn-container--text">  Provider of <span>2D AutoCAD drawing</span>, technitial plains in standart regulations <span>3D SketchUp modeling</span>, with DS fast rendering subcontracting services  <span>Revit </span>con bla bla bla.</h3>
+          <h4> We partner with your studio to complement your team with our service.</h4>
           <div class="hero-logos" id = "hero-logos">
             <button class="btn btn-primary">Contact</button>
             <div class="hero-logo-redes">
@@ -78,14 +85,7 @@
       </div>
     </div>
   </div>
-</div>
-
-  
-
-
-  
-
-  <div class="transcriptions-container" id="transcriptions-container">
+  <div class="transcriptions-contenedor" id="transcriptions-container">
     <button>About Me</button>
     <h1>Architect | Architecture Professor | Industrial Designer</h1>
     <h4>
@@ -97,14 +97,15 @@
 
 
   
-  <div class="cartas">
+  <div class="cartas" id = "cartas">
     <div class="productos1">
       <div class="producto1" >
         <h3>2D Drawing</h3>
-        <img  src="https://cdn3.iconfinder.com/data/icons/blue-collar-jobs-1/100/12-512.png" 
-        alt="icono minimalista de AutoCAD" />
+        <img src="/img/casa3.jpg"  id="casa3" alt="AutoCAD icon">
+<!--         <img  src="https://cdn3.iconfinder.com/data/icons/blue-collar-jobs-1/100/12-512.png" 
+     alt="icono minimalista de AutoCAD" /> -->   
         <div>
-          <p>Layout Plan<br>Structure</p>
+          <p>Layout Plan<!-- <br>Structure --></p>
           <div class="botones">
             
             <a href="#" class="ver-mas1">AutoCAD</a>
@@ -115,8 +116,9 @@
 
       <div class="producto1" >
         <h3>Transcribe</h3>
-        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ujnihDRAdDb_GZtE8wpakeqwlr0tjyE2Ow&usqp=CAU" 
-        alt="icono minimalista de SketchUp" />
+        <img src="/img/r2.jpeg" width="50" alt="AutoCAD icon">
+<!--         <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ujnihDRAdDb_GZtE8wpakeqwlr0tjyE2Ow&usqp=CAU" 
+       alt="icono minimalista de SketchUp" />-->  
         <div>
           <p>Electrical Installation</p>
           <div class="botones">
@@ -128,28 +130,18 @@
       </div>
 
       <div class="producto1" >
-        <h3>Quick Viewing</h3>
-        <img src="/img/casaicon.png" width="50" alt="AutoCAD icon">
-<!--         <img  src="https://cdn3.iconfinder.com/data/icons/blue-collar-jobs-1/100/12-512.png"
-        alt="icono minimalista de AutoCAD" /> --> 
+        <h3>Redit</h3>
+        <img src="/img/r1.jpeg" width="50" alt="AutoCAD icon">
         <div>
-          <p>Fast rendering 3ds Software</p>
+          <p>Fast 3d rendering </p>
           <div class="botones">
-           
             <a href="#" class="ver-mas1">ProyectDEV</a>
-            
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
-
-
-
-  
-  
   <div class="categorias-container">
     <div class="categorias-contenedor">
       <div class="categoria-content">
@@ -195,8 +187,8 @@
     <div class="footer-container">
       <div class="footer-section">
         <h4>Programador: Nicolas Gianfelici</h4>
-        <p>Email: contacto@tuempresa.com</p>
-        <p>Teléfono: +123 456 7890</p>
+        <p>Email: xxxxx@zzzzz.com</p>
+        <p>Teléfono: +xx-xxx 5555</p>
       </div>
       <div class="footer-section">
         <h4>Síguenos</h4>
@@ -211,18 +203,14 @@
       </div>
       <div class="footer-section">
         <h4>Información</h4>
-        <p>© <span id="year"></span> Tu Empresa. Todos los derechos reservados.</p>
+        <p>© <span id="year"></span> loboLDdeb. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+
 </html>
