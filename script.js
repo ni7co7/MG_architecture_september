@@ -370,9 +370,9 @@ handleWidthChange(mediaQuery);
 
 
 const imageSets = {
-    1: ['/img/a11.jpeg', '/img/a2.jpeg', '/img/a3.jpeg'],
-    2: ['/img/a4.jpeg', '/img/a5.jpeg', '/img/a6.jpeg'],
-    3: ['/img/a7.jpeg', '/img/a8.jpeg', '/img/a9.jpeg']
+    1: ['https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a11.jpeg', 'https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a2.jpeg', 'https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a3.jpeg'],
+    2: ['https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a4.jpeg', 'https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a5.jpeg', 'https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a6.jpeg'],
+    3: ['https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a7.jpeg', 'https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a8.jpeg', 'https://raw.githubusercontent.com/ni7co7/MG_architecture_september/refs/heads/main/img/a9.jpeg']
   };
   
   let currentImageIndex = {
