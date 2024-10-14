@@ -103,14 +103,14 @@
       /*  background-color:  #007bff; */
   /*      height: 100vh; */
       /*  text-align: center; */
-      /*  overflow: hidden; */
+       overflow: hidden; 
        
      }
     
      #tex_top-text{
       display: flex;
       flex-direction: column;
-      justify-content:end;
+      justify-content:center;
       align-items: center;
       padding-bottom: 5%;
       width: 100%;
@@ -121,15 +121,26 @@
       display: flex;
       flex-direction: row;
       justify-content:center;
-      align-items:start;
-      padding-top: 5%;
+      align-items:center;
+      /* padding-top: 5%; */
       width: 100%;
-      height: 50vh;
+     /*  height: 50vh; */
       background-color:  #007bff6d;
+      overflow-y: hidden;
      }
+     .tex_top-ima img{
+      overflow: hidden;
+     /*  display: flex; */
+     /*  flex-direction: column; */
+      justify-content: center;
+      align-items: center;
+     }
+
      .tex_top h1 {
-       font-size: 3.4rem;
+       font-size: 4.1rem;
        color:#fff;
+       margin: 1.2rem;
+       padding: 1.9rem;
       
        
      }
@@ -159,7 +170,7 @@
     /*    padding: 4.2rem; */
       width: 100px;
       height: 100px;
-      overflow: hidden;
+      overflow-y: hidden;
      }
      
      .tex_btn {
@@ -240,10 +251,21 @@
  gap: 2rem;
  margin: .6rem;
  padding-top: .5rem;
- 
+/*  border: #275767 4px solid; */
   
 }
+.tex_btn-text {
+  border: 2px solid transparent; /* Sin borde por defecto */
+  padding: 10px;
+  transition: border 0.3s ease-in-out; /* Transición suave */
+}
 
+.btn-outline-info:hover ~ .tex_btn-text{
+  border: 2px solid #275767; /* Si .a está después de .b, esto funcionaría */
+}
+.hero-logos:hover ~ #tex_btn-container--text{
+ 
+}
 
 
 
@@ -260,13 +282,13 @@
      }
      .tex_btn .hero-logos button {
       display: block;
-     margin: .7rem;
+/*      margin: .7rem; */
      width: 270px;
      font-size: 1.1rem;
      font-weight: bolder;
      padding: .4rem;
      align-content: end;
-     margin-top: 12%;
+    /*  margin-top: 12%; */
   
      }
      /* .tex_btn.hero-logos.hero-logo-redes */.hero-logo-instagram{
@@ -291,7 +313,7 @@
      
      @media (max-width: 768px) {
        .tex_top h1{
-        /*  font-size: 2.1rem; */
+         font-size: 3.1rem;
         /*  margin: 1.9rem; */
          /* margin-left: 50%; */
          
@@ -340,29 +362,31 @@
           /*  overflow: visible; */
        }
        .tex_top {
-         text-align: left;
+   /*       text-align: center; */
          /*  */
-        /*  display: grid; */
-        /*  grid-template-columns: 70% 30%; */
-         /* justify-content: center; */
-     /*     align-items: center; */
+         display: grid;
+         grid-template-columns: 70% 30%;
+         justify-content: center;
+         align-items: center;
           /*  display: flex; */
          /*  flex-direction: row; */
+     /*     border: #000000 2px solid; */
        }
        .tex_top h1{
          /* text-align: left; */
-        font-size: 3.6rem;
-       /*  margin: .9rem; */
-        padding: .7rem;
+        font-size: 6.9rem;
+        margin: 0rem;
+        padding: 0rem;
+        font-weight: bolder;
         /* overflow: hidden; */
        /* s */
      /*   overflow: visible; */
        }
       #tex_top-container__img {
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       justify-content: center;
+     /*   display: flex; */
+     /*   flex-direction: row; */
+      /*  align-items: center; */
+      /*  justify-content: center; */
      /*   width: 60%; */
       /*  height: 30%; */
       }
@@ -382,28 +406,65 @@
       
       
        .tex_btn {
+        /* border: #221d6f 2px solid; */
         /*  z-index: 111; */
-      
+        display: flex;
+        flex-direction: row;
+       /*  display: grid; */
+       /*  grid-template-columns:  60% 40%; */
          padding:  .9rem;
-         margin: 1.2rem;
+      /*    margin: 1.2rem; */
         /* padding: 2.3rem; */
         /* background-color: #2eb11f; */
        /*  overflow-x: visible;  */
        /*  z-index: 333333; */
        }
+       .tex_btn >.hero-logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15%;
+        /* display: grid; */
+        /* grid-template-columns:  60% 40%; */
+     /*    border: #275767 4px solid; */
+       
+       /*  border: #221d6f 2px solid; */
+       }
        #tex_btn-container {
-        
+     /*    overflow-y: hidden; */
+        display: grid;
+        grid-template-columns: 70% 30%;
+        justify-content:center;
+        gap: 6rem;
+       
+
+       /*  border: #c41a04 2px solid; */
+        padding: 4%;
+        margin: 3%;
+
+        /* margin: 2rem; */
+      /*   padding: 4rem; */
        }
        
        .tex_btn h3{
+        /* height: 100%; */
+        text-align: right ;
+        margin: 0;
+        padding: 0;
         margin-top: 5%;
         line-height: 3rem;
-        font-size: 2.9rem;
-        margin-left: 15%;
-        margin-right: 15%;
+        font-size: 3.2rem;
+       /*  margin-left: 15%; */
+       /*  margin-right: 15%; */
+       }
+       .tex_btn h3 span {
+        font-size: 2.1rem;
        }
        .tex_btn h4 {
-        font-size: 2.3rem;
+        margin: 0;
+        font-size: 1.2rem;
+        text-align: right;
         /*  opacity: 0; */
          /* font-size: larger; */
          /* background-color: #2eb11f; */
